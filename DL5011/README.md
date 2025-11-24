@@ -293,30 +293,3 @@ dl5011/
 2. **使用多GPU**: 设置 `--gpus 0,1,2,3`
 3. **减少验证频率**: 调整 `check_val_every_n_epoch`
 
-## 常见问题
-
-### 1. GPU内存不足
-
-```python
-# 减小批量大小
-batch_size: 1
-
-# 或使用CPU训练（非常慢）
---gpus ""  # 空字符串表示使用CPU
-```
-
-### 2. 数据集路径问题
-
-确保配置文件中的路径正确:
-```yaml
-model:
-  params:
-    ckpt_path: /home/YueChang/phd_ws/dl5011/checkpoint/...
-
-data:
-  params:
-    train:
-      params:
-        data_root: /home/YueChang/phd_ws/dl5011/processed_data
-```
-
