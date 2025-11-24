@@ -320,10 +320,3 @@ data:
         data_root: /home/YueChang/phd_ws/dl5011/processed_data
 ```
 
-### 3. 模块导入错误
-
-确保正确设置Python路径:
-```python
-sys.path.insert(0, '/home/YueChang/phd_ws/dl5011/instruct-pix2pix')
-sys.path.insert(0, '/home/YueChang/phd_ws/dl5011/instruct-pix2pix/stable_diffusion')
-```
